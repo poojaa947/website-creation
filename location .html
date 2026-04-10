@@ -1,0 +1,74 @@
+ <!DOCTYPE html>
+<html>
+<head>
+  <title>Live Location Tracking on Google Maps</title>
+  <style>
+    #map {
+      height: 100vh;
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+  <div id="map"></div>
+
+  <script>
+    let map;
+    let marker;
+
+    function initMap() {
+      map = new google.maps.Map(document.getElementById("map"), {
+        zoom: 15,
+        center: { lat: 0, lng: 0 },
+      });
+
+      marker = new google.maps.Marker({
+        map: map,
+        title: "You are here",
+      });
+
+      if (navigator.geolocation) {
+        navigator.geolocation.watchPosition(
+          (position) => {
+            const pos = {
+              lat: position.coords.latitude,
+              lng: position.coords.longitude,
+            };
+            marker.setPosition(pos);
+            map.setCenter(pos);
+          },
+          () => {
+            alert("Error: The Geolocation service failed.");
+          },
+          {
+            enableHighAccuracy: true,
+            timeout: 5000,
+            maximumAge: 0
+          }
+        );
+      } else {
+        alert("Error: Your browser doesn't support geolocation.");
+      }
+    }
+  </script>
+
+  <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY_HERE&callback=initMap">
+  </script>
+</body>
+</html>
+
+
+
+.image-title{
+     position: absolute;
+    top: 50%;
+    left: 15%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 5.5rem;
+    font-weight: bold;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Adds shadow for better readability */
+     display: grid;
+     grid-template-columns: 1fr 1fr;
+}    

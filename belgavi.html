@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Belagavi</title>
+  <link rel="stylesheet" href="belgavi.css"> <!-- Link to external CSS file -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script> <!-- Font Awesome -->
+    <style type="text/css">
+  #slider {
+      overflow: hidden;
+      height: 70vh; /* Increased from 50vh to 70vh */
+      width: 99vw;
+      margin: 0 auto;
+      display: block;
+  }
+  #slider figure {
+      position: relative;
+      width: 500%;
+      margin: 0;
+      left: 0;
+      animation: 20s slider infinite;
+      height: 100%;
+  }
+  #slider figure img {
+      float: left;
+      width: 20%;
+      height: 100%; /* Changed from 200% to 100% to fit parent */
+      object-fit: cover;
+  }
+  @keyframes slider {
+      0% { left:0; }
+      20% { left:0; }
+      25% { left: -100%; }
+      45% { left: -100%; }
+      50% { left:-200%; }
+      70% { left:-200%; }
+      75% { left:-300%; }
+      95% { left:-300%; }
+      100% { left:-400%; }
+      0% { left:0; }
+      20% { left:0; }
+  }
+</style>
+ 
+ <body>
+  <div class="navbar">
+    <div class="logo">
+      <a href="#"> <i class="fa-solid fa-bus-simple"></i> Logo</a>
+    </div>
+    <div class="links">
+   <!-- <a href="#Home"><i class="fas fa-home"></i> Home</a>-->
+      <a href="#Select District"><i class="fa-solid fa-location-crosshairs"></i> Select District</a>
+      <a href="#services"><i class="fas fa-concierge-bell"></i> Services</a>
+      <a href="#contact"><i class="fas fa-envelope"></i> Contact</a>
+      <div class="dropdown">
+        <a href="#"><i class="fas fa-ellipsis-h"></i> More</a>
+        <div class="dropdown-content">
+          <a href="#option1"><i class="fas fa-user"></i> Profile</a>
+          <a href="#option2"><i class="fas fa-cog"></i> Settings</a>
+          <a href="#option3"><i class="fas fa-sign-out-alt"></i> Logout</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    
+  <div class="container">
+    <div class="content-container">
+      <div id="slider">
+        <figure>
+          <img src="fortlake.jpg">
+          <img src="oip.jpg">
+          <img src="u.jpg">
+          <img src="2.jpg">
+        </figure>
+      </div>
+    </div>
+    <!-- Add gap between slider and cards -->
+    <div style="height: 40px;"></div>
+    <!-- Card divisions start after the gap -->
+    <div class="card">
+      <div class="left-section">
+        <img src="2.jpg" class="logo" alt="Air India Express">
+        <div>
+          <h1>Uchagavi</h1>
+          <p>Fri, 18 Jul 2025</p>
+        </div>
+      </div>
+      <div class="middle-section">
+        <div class="time-block">
+          <h2>CBT</h2>
+          <p>Bus Stand</p>
+        </div>
+        <div class="duration">
+          <p>30m</p>
+          <div class="dot-line"></div>
+          <p>5 Stop</p>
+        </div>
+        <div class="time-block">
+          <h2>Uchagav</h2>
+          <p>Village</p>
+        </div>
+      </div>
+      <div class="right-section">
+        <button class="btn green">
+          <span>Track</span>
+          <i class="fa-solid fa-location-dot"></i>
+        </button>
+      </div>
+    </div>
+    <!-- Repeat for other cards... -->
+    <!-- ...existing code for other cards... -->
+  </div>
+  <!-- ...existing code... -->
+</body>
+   <div class="card">
+    <div class="left-section">
+      <img src="2.jpg" class="logo" alt="Air India Express">
+      <div>
+        <h1>Ambewadi</h1>
+        <p>Fri, 18 Jul 2025</p>
+      </div>
+    </div>
+    <div class="middle-section">
+      <div class="time-block">
+        <h2>CBT</h2>
+        <p>Bus Stand</p>
+      </div>
+      <div class="duration">
+        <p>30m</p>
+        <div class="dot-line"></div>
+        <p>5 Stop</p>
+      </div>
+      <div class="time-block">
+        <h2>Ambewadi</h2>
+        <p>Village</p>
+      </div>
+    </div>
+    <div class="right-section">
+      <button class="btn green">
+        <span>Track</span>
+        <i class="fa-solid fa-location-dot"></i>
+      </button>
+    </div>
+  </div>
+   <div class="card">
+    <div class="left-section">
+      <img src="2.jpg" class="logo" alt="Air India Express">
+      <div>
+        <h1>Gojaga</h1>
+        <p>Fri, 18 Jul 2025</p>
+      </div>
+    </div>
+    <div class="middle-section">
+      <div class="time-block">
+        <h2>CBT</h2>
+        <p>Bus Stand</p>
+      </div>
+      <div class="duration">
+        <p>30m</p>
+        <div class="dot-line"></div>
+        <p>5 Stop</p>
+      </div>
+      <div class="time-block">
+        <h2>Gojga</h2>
+        <p>Village</p>
+      </div>
+    </div>
+    <div class="right-section">
+      <button class="btn green">
+        <span>Track</span>
+        <i class="fa-solid fa-location-dot"></i>
+      </button>
+    </div>
+  </div>
+   <div class="card">
+    <div class="left-section">
+      <img src="2.jpg" class="logo" alt="Air India Express">
+      <div>
+        <h1>Angol</h1>
+        <p>Fri, 18 Jul 2025</p>
+      </div>
+    </div>
+    <div class="middle-section">
+      <div class="time-block">
+        <h2>CBT</h2>
+        <p>Bus Stand</p>
+      </div>
+      <div class="duration">
+        <p>30m</p>
+        <div class="dot-line"></div>
+        <p>5 Stop</p>
+      </div>
+      <div class="time-block">
+        <h2>Angol</h2>
+        <p>Village</p>
+      </div>
+    </div>
+    <div class="right-section">
+      <button class="btn green">
+        <span>Track</span>
+        <i class="fa-solid fa-location-dot"></i>
+      </button>
+    </div>
+  </div>
+   <div class="card">
+    <div class="left-section">
+      <img src="2.jpg" class="logo" alt="Air India Express">
+      <div>
+        <h1>Kakti</h1>
+        <p>Fri, 18 Jul 2025</p>
+      </div>
+    </div>
+    <div class="middle-section">
+      <div class="time-block">
+        <h2>CBT</h2>
+        <p>Bus Stand</p>
+      </div>
+      <div class="duration">
+        <p>30m</p>
+        <div class="dot-line"></div>
+        <p>5 Stop</p>
+      </div>
+      <div class="time-block">
+        <h2>Kakti</h2>
+        <p>Village</p>
+      </div>
+    </div>
+    <div class="right-section">
+      <button class="btn green">
+        <span>Track</span>
+        <i class="fa-solid fa-location-dot"></i>
+      </button>
+    </div>
+  </div>
+   <div class="card">
+    <div class="left-section">
+      <img src="2.jpg" class="logo" alt="Air India Express">
+      <div>
+        <h1>Sambra</h1>
+        <p>Fri, 18 Jul 2025</p>
+      </div>
+    </div>
+    <div class="middle-section">
+      <div class="time-block">
+        <h2>CBT</h2>
+        <p>Bus Stand</p>
+      </div>
+      <div class="duration">
+        <p>30m</p>
+        <div class="dot-line"></div>
+        <p>5 Stop</p>
+      </div>
+      <div class="time-block">
+        <h2>Angol</h2>
+        <p>Belagavi Airport</p>
+      </div>
+    </div>
+    <div class="right-section">
+      <button class="btn green">
+        <span>Track</span>
+        <i class="fa-solid fa-location-dot"></i>
+      </button>
+    </div>
+  </div>
+   <div class="card">
+    <div class="left-section">
+      <img src="2.jpg" class="logo" alt="Air India Express">
+      <div>
+        <h1>Panth Balekundri</h1>
+        <p>Fri, 18 Jul 2025</p>
+      </div>
+    </div>
+    <div class="middle-section">
+      <div class="time-block">
+        <h2>CBT</h2>
+        <p>Bus Stand</p>
+      </div>
+      <div class="duration">
+        <p>30m</p>
+        <div class="dot-line"></div>
+        <p>5 Stop</p>
+      </div>
+      <div class="time-block">
+        <h2>panthBalekundri</h2>
+        <p>Village</p>
+      </div>
+    </div>
+    <div class="right-section">
+      <button class="btn green">
+        <span>Track</span>
+        <i class="fa-solid fa-location-dot"></i>
+      </button>
+    </div>
+  </div>
+
+
+
+
+  <!-- Repeat for other cards... -->
+  <!-- ...existing code for other cards... -->
+</div>
+<!-- ...existing code... -->
+   
+  <!-- ...existing code... -->
+
+< ->
+  
+</body>
+</html>

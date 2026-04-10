@@ -1,0 +1,206 @@
+/* Reset & base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body, html {
+  height: 100%;
+  font-family: 'Inter', sans-serif;
+  color: #fff;
+  overflow-x: hidden;
+}
+
+/* Slideshow background */
+.slideshow {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  z-index: -1;
+  overflow: hidden;
+}
+.slide {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  opacity: 0;
+  animation: fade 32s infinite;
+}
+.slide1 {
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/6/67/Belagavi_Flag.jpg');
+  animation-delay: 0s;
+}
+.slide2 {
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Gokak_Falls.jpg/1280px-Gokak_Falls.jpg');
+  animation-delay: 8s;
+}
+.slide3 {
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/e/ea/Kamal_Basti_Belagavi.jpg');
+  animation-delay: 16s;
+}
+.slide4 {
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/5/58/Suvarna_Vidhana_Soudha_Belagavi.jpg');
+  animation-delay: 24s;
+}
+@keyframes fade {
+  0% { opacity: 0; }
+  8% { opacity: 1; }
+  25% { opacity: 1; }
+  33% { opacity: 0; }
+  100% { opacity: 0; }
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 40px;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 22px;
+  font-weight: bold;
+}
+.logo i {
+  color: #ffcccc;
+}
+.navbar nav a {
+  color: #fff;
+  text-decoration: none;
+  margin-left: 20px;
+  font-weight: 500;
+}
+.navbar nav a i {
+  margin-right: 6px;
+}
+
+/* Search Box */
+.search-container {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.search-box {
+  background: rgba(255, 255, 255, 0.15);
+  padding: 40px;
+  border-radius: 16px;
+  text-align: center;
+  backdrop-filter: blur(5px);
+}
+.search-box h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+.search-box p {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+.search-box input {
+  padding: 15px;
+  width: 100%;
+  max-width: 300px;
+  border: none;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  font-size: 16px;
+}
+.search-box button {
+  background: #4d0000;
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* Routes Section */
+.routes {
+  background: #fff;
+  color: #000;
+  padding: 60px 40px;
+}
+.routes h2 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+.routes p {
+  margin-bottom: 30px;
+  color: #555;
+}
+.route-card {
+  background: #f9f9f9;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.route-info {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+.route-info .icon i {
+  font-size: 28px;
+  color: #a10000;
+}
+.track-btn {
+  background: #4d0000;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 8px;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+
+
+//
+.search-box {
+  position: relative;
+  z-index: 2;
+  background-color: rgba(0, 0, 0, 0.5); /* dark background */
+  padding: 40px;
+  border-radius: 10px;
+  max-width: 500px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.search-box h1 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.search-box p {
+  margin-bottom: 20px;
+}
+
+ .search-box input {
+  padding: 10px;
+  width: 60%;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  margin-right: 10px;
+}
+
+  .search-box button {
+  padding: 10px 25px;
+  font-size: 1rem;
+  border: none;
+  background-color: #8b0000;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}

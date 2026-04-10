@@ -1,0 +1,212 @@
+body {
+    font-family: 'Inter', sans-serif;
+    background:black;
+    padding: 20px;
+  }
+
+ 
+
+  
+   .navbar {
+  display: flex;
+   justify-content: space-between;
+  align-items: center;
+  background:linear-gradient(to top,#a60440 0%,#3e021800 100%);
+  padding: 10px 20px;
+  height:50px;
+  width: 101%;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 15px;
+  width:50px;
+    height: 50px;
+    
+    position: relative;
+}
+
+.navbar a:hover {
+    --background:linear-gradient(to ,#2b3cf2 0%,#970d8e 100%); 
+  border-radius: 4px;
+}
+
+ .navbar .logo a {
+      color: #e6e6e6; /* Light logo color */
+      text-decoration: none;
+      font-size: 24px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .navbar .logo i {
+      font-size: 1.2em;
+      vertical-align: middle;
+    }
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #333;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  display: block;
+}
+
+.half-length-image{
+  width: 50%;
+  height: 50%;
+  display: block;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.image-title {
+    position: absolute;
+    top: 50%;
+    left: 15%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 5.5rem;
+    text-align: center;
+
+}
+ 
+
+ 
+  
+  .card {
+    background: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 15px;
+    box-shadow: 0 5px 8px white (0, 0, 0, 0.05);
+    
+  }
+  
+  .left-section {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex: 2;
+
+  }
+  
+   
+  .left-section h1 {
+    margin: 0 0 5px 0;
+    font-size: 25px;
+}
+  
+  .left-section p {
+    margin: 0;
+    font-size: 13px;
+    color: #444;
+  }
+  
+  .left-section small {
+    color: #888;
+  }
+  
+  .logo {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+  }
+  
+  .middle-section {
+    flex: 2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .time-block h2 {
+    margin: 0;
+    font-size: 20px;
+  }
+  
+  .time-block p {
+    margin: 5px 0 0;
+    font-size: 13px;
+    color: #555;
+  }
+  
+  .duration {
+    text-align: center;
+    font-size: 13px;
+    color: #777;
+  }
+  
+  .dot-line {
+    width: 60px;
+    height: 2px;
+    background: #ccc;
+    margin: 5px auto;
+    position: relative;
+  }
+  
+  .dot-line::before {
+    content: '';
+    width: 6px;
+    height: 6px;
+    background: #007bff;
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -2px;
+  }
+  
+  .right-section {
+    text-align: right;
+    flex: 1;
+  }
+  
+  .right-section h2 {
+    margin: 0 0 10px;
+    color: #222;
+  }
+  
+  button {
+    background-color: #853aff;
+    color: white;
+    border: none;
+    right: 35%; /* Adjusted left property to move the button left */
+    padding: 20px 32px; /* Increased padding for a larger button */
+    border-radius: 10px; /* Adjusted border-radius for proportional scaling */
+    font-weight: bold;
+    font-size: 22px; /* Increased font size */
+    cursor: pointer;
+    position: relative; /* Ensure positioning works */
+    transform: translateX(-10px); /* Fine-tune the position */
+}
+ 
+  
+ 
+  
+  .btn i {
+    font-size: 20px;
+  }
+  
+  .btn:hover {
+    transform: scale(1.05);
+  }
+
+  .purple {
+    background: linear-gradient(to right, #9c27b0, #8e24aa);
+  }
+  
